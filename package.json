@@ -1,0 +1,19 @@
+{
+  "name": "acme-payments",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sample customer repo for the PatchBay demo — a small Node billing service on the Stripe SDK.",
+  "scripts": {
+    "test": "jest --ci"
+  },
+  "dependencies": {
+    "stripe": "^17.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": ["**/test/**/*.test.js"]
+  }
+}
