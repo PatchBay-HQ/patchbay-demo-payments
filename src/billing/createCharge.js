@@ -22,7 +22,7 @@ async function createCharge(stripe, { token, amount, currency = "usd" }) {
   const charge = await stripe.charges.create({
     amount,
     currency,
-    source: token.id,
+    payment_method: token.id,
     description: "acme/payments charge",
   });
 
